@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHUSRUTA-SAMITA HOSPITAL</title>
+    <link rel="stylesheet" href="project2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="welcome-message">
+        <marquee><span>Welcome to SHUSRUTA-SAMITA Hospital DUMKA</span></marquee> 
+    </div>
+    <header>
+        <div class="title">
+            <h1>SHUSRUTA-SAMITA HOSPITAL</h1>
+            <h2>--Dumka,Jharkhand--</h2>
+        </div>
+    </header>
+    <nav>
+        <a href="project2.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="doctors" id="doctors">
+            <h2><u>Our Doctors</u></h2>
+            <div class="doc">
+                   <div class="doc1">
+                    <a href="doc1.html">
+                     <img src="maledoc.jpg" alt="Dr. MK Pandit" class="doctor-image">
+                    </a>
+                     <p>Dr. MK Pandit (General Surgeon)</p>
+                     <a href="payment form.html" target="_blank">
+                        <button class="btn">Book Appointment</button>
+                        </a>
+                   </div>
+                   <div class="doc2">
+                   <a href="doc2.html">
+                      <img src="ladydoc.jpeg" alt="Dr. Smriti Sah" class="doctor-image">
+                    </a>
+                      <p>Dr. Smriti Sah (Pediatrician)</p>
+                      <a href="payment form.html" target="_blank">
+                        <button class="btn">Book Appointment</button>
+                        </a>
+                   </div>                   
+                 <div class="doc3">
+                    <a href="doc3.html">
+                    <img src="maledoc2.jpeg" alt="Dr. Mukesh Verma" class="doctor-image">
+                    </a>
+                    <p>Dr. Mukesh Verma (Dermetology)</p>
+                    <a href="payment form.html" target="_blank">
+                      <button class="btn">Book Appointment</button>
+                    </a>
+                 </div>
+
+            </div>
+        </div>
+        <div id="services" class="services">
+            <div class="container">
+      
+              <div class="services">
+                <h2>Services</h2>
+                <p class="title">Discover the comprehensive services offered at Pharma to meet all your healthcare needs.</p>
+                <div class="tiles">
+                    <div class="title1">
+                        <div class="icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h4><a href="">Health and Wellness Products</a></h4>
+                        <p>Vitamins, supplements, and natural health products to support your overall well-being.</p>
+                    </div>
+                    <div class="title2">
+                        <div class="icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h4><a href="">Over-the-Counter Medications</a></h4>
+                        <p>A wide selection of OTC medications to address common health issues</p>
+                    </div>
+                    <div class="title3">
+                        <div class="icon">
+                            <i class="fas fa-hospital-user"></i>
+                        </div>
+                        <h4><a href="">Consultations</a></h4>
+                        <p>Personalized consultations with our pharmacists to discuss your medications and health concerns.</p>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="testimonial">
+            <h3>What Our Patients Say</h3>
+            <p>"I received excellent care at HealthCare Hospital. The doctors were knowledgeable and compassionate."</p>
+            <p style="font-style: italic;">- Rahul Kumar, Patient</p>
+            <div class="hidden">
+                <p>“The facilities at the hospital are top-notch, and the medical team is incredibly skilled. I couldn’t have asked for better care.”</p>
+                <p style="font-style: italic;">- Ramesh Gupta</p>
+                <p>“From the moment I walked in, I felt welcomed and cared for. SS hospital truly prioritizes patient well-being.”</p>
+                <p style="font-style: italic;">- Akash Kalyan</p>
+            </div>
+            <p class="view-all" onclick="toggleReviews()">View All</p>
+        </div>
+    
+        <!-- JavaScript to handle toggling reviews -->
+        <script>
+            let reviewsVisible = false;
+    
+            function toggleReviews() {
+                const hiddenReviews = document.querySelectorAll('.hidden');
+                hiddenReviews.forEach(review => {
+                    review.style.display = reviewsVisible ? 'none' : 'block';
+                });
+                reviewsVisible = !reviewsVisible;
+                document.querySelector('.view-all').textContent = reviewsVisible ? 'Hide Reviews' : 'View All';
+            }
+        </script>
+        <div class="contact" id="contact">
+            <h2>Contact Us:102</h2>
+            <p>123 HealthCare Street, Dumka</p>
+            <p>Phone: +918292****, 62067****</p>
+            <p>Email: healthcarehospital@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>

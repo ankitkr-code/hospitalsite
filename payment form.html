@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="style1.css">
+ </head>
+ <body>
+  <div>
+ <h1 class="Payment">APPOINTMENT FORM</h1>
+ <h2>Personal info</h2>
+  <p> Name:-* <input type="text" name="name" id="name" placeholder="Full name" required></p>
+<p> Father's name:-* <input type="text" name="father's name" id="father's name" placeholder="Full name" required></p>
+ <fieldset>
+    <legend>Gender*</legend>
+   <p> male<input type="radio" name="gender" id="male" required>
+    female<input type="radio" name="gender" id="female" required></p>
+    </fieldset>
+<p>Address:- <textarea name="address" id="address" cols="50" rows="10"  placeholder="enter your address"></textarea></p> 
+<p> Pincode:- *<input type="number" name="pincode" id="pincode" required></p>
+<p> Mob. no.:- *<input type="number" name="mobile no." id="mobile no" placeholder="enter your phone no." required></p>
+<p> Email Id:- *<input type="Email" name="email" id="email" ></p>
+
+<h2 style="text-decoration-line: underline ;">Payment details</h2>
+<p>Card type:-*
+    <select name="card type" id="card type" required>
+        <option value="">--select a card type--</option>
+        <option value="visa">visa</option>
+        <option value="rupay">rupay</option>
+        <option value="UPI">UPI</option>
+        <option value="net banking">net banking</option>
+    </select>
+</p>
+<p>Card number:- * <input type="number" name="card number" id="card number" required></p>
+<p>
+    Expiration date:-* <input type="date" name="exp_date" id="exp_date" required> 
+</p>
+<p>cvv:-* <input type="password" name="cvv" id="cvv" required></p>
+<p><a href="finish.html"><input type="submit" value="Pay Now" ></a>
+ <a href="payment form.html"><input type="reset" value="Reset"></a>
+</p>
+</div>
+</body>
+ </html>

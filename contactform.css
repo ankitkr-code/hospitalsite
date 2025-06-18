@@ -1,0 +1,46 @@
+
+  /* Basic styling for the form */
+  body {
+    font-family: "Gill Sans Extrabold", sans-serif;
+
+    background-color: #f6e6e6;
+    margin: 0;
+    padding: 0;
+  }
+  .contact-form {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #f6e6e6;
+    border-radius: 8px;
+  }
+  .contact-form h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #151d01;
+    border-radius: 4px;
+  }
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3ccef2;
+    border: thick double #32a1ce ;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  .contact-form button:hover {
+    background-color: #610606;
+  }

@@ -1,0 +1,204 @@
+@media only screen and (min-width: 1024px) {
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+  html{
+    scroll-behavior: smooth;
+  } 
+.welcome-message{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large;
+    text-align: center;
+    background: rgb(23,11,223);
+    background: linear-gradient(90deg, rgba(23,11,223,1), rgba(32,183,143,1) 49%, rgba(0,212,255,1) 100%);
+}
+header {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-image:url(backimage.jpg);
+    background-position:5% 60%;
+    align-items: center;
+    justify-content: center;
+}
+header .title{
+    color: rgb(215, 230, 255);
+    font-size: 30px;
+    font-family:limelight;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background:linear-gradient(60deg, rgb(87, 87, 215)5%,rgb(115, 142, 115),rgb(238, 200, 200));
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom:0;
+    font-size: 22px;
+}
+nav a {
+    color: #fff;
+    text-decoration:none;
+    border-radius: 10px;
+    margin:6px;
+    padding: 2px;
+    transition:0.2s;
+}
+nav a:hover{
+     border:2px solid white;
+     color: rgb(213, 255, 5);
+     border-radius: 20px;
+     padding: 3px;
+     transition: ease-in 0.1s;
+}
+nav a:active{
+    transform: scale(1.1);
+}
+.doctors{
+    margin:0;
+    padding: 5px;
+    background-color: #708faa;
+}
+.doctors h2{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    color: #f9f9f9;
+}
+.doc{
+   display: flex;
+   align-items:center;
+   justify-content: space-around;
+}
+.doc p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.doctor-image {
+    max-width: 100%;
+    height: 300px;
+    border:2px double white;
+    border-radius: 100px;
+}
+.doctor-image:hover{
+    transform: scale(1.05);
+    border: 2px dotted rgb(29, 20, 58);
+    transition: ease-in-out 0.3s;
+} 
+.btn {
+    display:flex;
+    border-radius: 20px;
+    border:2px solid blue;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    background-color: #227ac8;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 80px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.btn:active{
+    background-color: red;
+}
+.services {
+    background-color: #b9cecb;
+    margin:0;
+    padding:10px;
+    border-radius: 10px;
+ }
+ .services h2{
+     color: white;
+     text-align: center;
+     font-size: 45px;
+ }
+ .services .title{
+     text-align: center;
+     font-size: 24px;
+     font-weight: bold;
+     color: #227ac8;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ .tiles{
+     display: flex;
+     justify-content: space-around;
+     padding: 10px;
+     column-gap: 10px;
+ }
+ .tiles h4{
+     font-size:28px;
+     text-align: center;
+ }
+ .tiles a{
+     text-decoration: none;
+ }
+ .tiles p{
+     padding: 10px;
+     font-size: 20px;
+     text-align: justify;
+     font-weight: bold;
+     letter-spacing:0.7px;
+     font-family:sans-serif
+ }
+ .title1,.title2,.title3{
+     background-color: rgb(211, 241, 231);
+     border: 2px solid rgb(255, 255, 255);
+     border-top-left-radius: 30px;
+     border-bottom-right-radius: 30px;
+     display: flex;
+     padding: 20px;
+     max-width: 400px;
+     flex-direction:column;
+     align-items: center;
+     box-shadow: 5px 5px 10px rgb(146, 196, 231);
+     box-shadow: inset;
+ }
+ .title1:hover,.title2:hover,.title3:hover{
+     box-shadow: inset 5px 5px 15px rgb(146, 196, 231),5px 5px 15px rgb(146, 196, 231);
+     transform: scale(1.05);
+     transition:all 0.4s;
+ 
+ }
+ .title1 .icon,.title2 .icon,.title3 .icon{
+     font-size: 200px;
+     color: #227ac8;
+     margin-bottom: 0px;
+ }
+.testimonial {
+    font-size: 24px;
+    margin:0;
+    background-color: #e0d8d8;
+    padding: 1rem;
+    border-radius: 5px; .testimonial p {
+        display: none;
+        
+    }
+    .view-all {
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+    }
+    .hidden {
+        display: none;
+    }
+    
+    
+
+}
+.contact {
+    background-color: #b9bccc;
+    margin:0;
+    padding: 5px;
+    text-align: center;
+}
+.contact p {
+    font-size: 1.2rem;
+    color: #050c34cc;
+}
+.contact h2{
+    color: rgba(5, 5, 28, 0.892);
+}
+}
