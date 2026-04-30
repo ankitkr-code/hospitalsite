@@ -3,22 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment Successful</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<style>
-    p{
-    font-size: 30px; 
-    color: #021935;     
-    border: 2px solid #000000; 
-    border-radius: 10px; 
-    padding: 10px; 
-    background: #fbcc80;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 400px;
-}
-</style>
-<body>
-    <p class="payment-success"> Your payment is Successful &#10004;</p>
+<body class="bg-slate-50 min-h-screen flex items-center justify-center font-sans">
+
+    <div class="bg-white p-10 rounded-2xl shadow-2xl text-center max-w-md w-full border border-slate-100">
+        <div class="mx-auto flex items-center justify-center h-24 w-24 rounded-full bg-green-100 mb-6">
+            <svg class="h-12 w-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+            </svg>
+        </div>
+
+        <h1 class="text-3xl font-bold text-slate-800 mb-2">Payment Successful!</h1>
+        <p class="text-slate-500 mb-8">Your appointment has been booked successfully.</p>
+
+        <div class="bg-slate-50 rounded-lg p-4 mb-8 text-left border border-slate-200">
+            <div class="flex justify-between mb-2">
+                <span class="text-slate-500 text-sm">Transaction ID</span>
+                <span class="font-mono font-bold text-slate-700">TXN_8839201</span>
+            </div>
+            <div class="flex justify-between mb-2">
+                <span class="text-slate-500 text-sm">Date</span>
+                <span class="font-medium text-slate-700" id="current_date"></span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-slate-500 text-sm">Amount Paid</span>
+                <span class="font-bold text-teal-600">₹ 500.00</span>
+            </div>
+        </div>
+
+        <a href="payment form.html" class="block w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+            Book Another Appointment
+        </a>
+    </div>
+
+    <script>
+        // Set current date automatically
+        const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current_date').textContent = new Date().toLocaleDateString('en-US', dateOptions);
+    </script>
 </body>
 </html>
